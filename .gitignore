@@ -1,0 +1,47 @@
+# Runtime outputs and scientific assets
+runs/
+outputs/
+work/
+.codex_work/
+data/
+external/
+third_party/
+checkpoints/
+configs/*.local.json
+.env
+.env.*
+*.log
+*.npy
+*.npz
+*.pssm
+*.pt
+*.pth
+*.pkl
+*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+dist/
+build/
+wandb/
+mlruns/
+tensorboard/
+
+# Local development and internal validation records
+.github/
+docs/
+envs/
+legacy/
+reference/
+tests/
+THIRD_PARTY.md
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

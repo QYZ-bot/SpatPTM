@@ -1,0 +1,40 @@
+{
+  "runtimes": {
+    "model_python": "C:/path/to/model-env/python.exe",
+    "spot_python": "C:/path/to/spot-env/python.exe",
+    "gate_python": "C:/path/to/gate-env/python.exe"
+  },
+  "blast": {
+    "psiblast": "C:/path/to/ncbi-blast-2.16.0+/bin/psiblast.exe",
+    "database": "C:/path/to/blastdb/swissprot",
+    "database_acquired_at": "YYYY-MM-DD",
+    "iterations": 3,
+    "evalue": 0.001,
+    "workers": 4,
+    "threads_per_query": 1
+  },
+  "spot": {
+    "spot1d_root": "C:/path/to/SPOT-1D-Single",
+    "spot_contact_root": "C:/path/to/SPOT-Contact-Single",
+    "torch_home": "C:/path/to/torch-cache",
+    "device": "cpu",
+    "esm_device": "cpu"
+  },
+  "gate": {
+    "external_code_root": "C:/path/to/PMiSLocMF-main/code",
+    "epochs": 100,
+    "learning_rate": 0.01,
+    "lambda": 1.0,
+    "dropout": 0.5,
+    "seed": 42
+  },
+  "spatptm": {
+    "window": 43,
+    "threshold": 0.5,
+    "seeds": [42, 2024, 888],
+    "full_data_epochs": {"42": 5, "2024": 5, "888": 8},
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "mixup_alpha": 0.4
+  }
+}
