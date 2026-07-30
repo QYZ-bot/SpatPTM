@@ -3,7 +3,7 @@ runs/
 outputs/
 work/
 .codex_work/
-data/
+data/*
 external/
 third_party/
 checkpoints/
@@ -39,6 +39,11 @@ legacy/
 reference/
 tests/
 THIRD_PARTY.md
+
+# Small public example dataset
+!data/example/
+!data/example/*.npy
+!data/example/*.csv
 
 # Editors and OS
 .idea/
