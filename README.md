@@ -1,5 +1,11 @@
 # SpatPTM
 
+## Model Description
+
+A deep learning model SpatPTM is built for predicting cancer-associated post-translational modification. The position-specific scoring matrix (PSSM) is first extracted for each protein, which is refined by graph attention auto-encoder using a protein spatial network yielded by SPOT-Contact-LM. This operation can transmit the evolutionary information of residues in a protein sequence. The submatrix is extracted from the refined PSSM to represent the PTM site, incorporating the information of full protein sequence. Then, the submatrix is processed by dual 1D convolution kernels, residue-attention, multi-head self-attention, and attention pooling, generating the final feature vector of the PTM site. The fully connected layer is adopted to make prediction.
+
+整体结构见 [Figure1.pdf](docs/images/Figure1.pdf)。
+
 ## Requirements
 
 ```text
